@@ -302,7 +302,11 @@ When running a crawler using the built\-in JSON classifier, the entire file is u
 root
 |-- record: array
 ```
-However, to create a schema that is based on each record in the JSON array, create a custom JSON classifier and specify the JSON path as `$[*]`\. When you specify this JSON path, the classifier interrogates all 12 records in the array to determine the schema\. The resulting schema contains separate fields for each object, similiar to this:  
+However, to create a schema that is based on each record in the JSON array, create a custom JSON classifier and specify the JSON path as follows. 
+
+`$[*]` 
+
+When you specify this JSON path, the classifier interrogates all 12 records in the array to determine the schema\. The resulting schema contains separate fields for each object, similiar to this:  
 
 ```
 root
